@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+/*************************************************
+                    Global styles
+**************************************************/
+
+* {
+  box-sizing: border-box;
+}
+
+body, html {
+  height: 100%;
+}
+
+body {
+  background-color: #fff;
+  margin: 0;
+  font-family: 'Roboto', Arial, sans-serif;
+  color: #333333;
+  line-height: 1.4;
+  height: 100%;
+}
+
+h1 {
+  margin: 60px 10px;
+  font-size: 45px;
+}
+
+.hideElement {
+  display: none;
+}
+
+.showElement {
+  display: block;
+}
+/***************************************************
+                      Layout
+***************************************************/
+
+.container {
+  width: 750px;
+  margin: 0 auto;
+  padding-top: 40px;
+}
+
+/***************************************************
+                Specific styles
+***************************************************/
+.btnStyle {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.9s;
+}
+
+.btnStyle:hover {
+  color: white;
+  background-color: #ff6600;
+}
+
+.centering {
+  text-align: center;
+}
+
+#score {
+  padding: 10px 0;
+}
+.playerBox1, .playerBox2 {
+  float: left;
+  width: 50%;
+
+}
+
+.playerBox1 {
+  border-right: 1px solid grey;
+  border-bottom-left-radius: 7px;
+}
+
+.playerBox2 {
+  border-bottom-right-radius: 7px;
+}
+
+.box1 {
+  border: 1px solid grey;
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+  width: 100%;
+}
+
+.box2 {
+  border: 1px solid grey;
+  border-top: 0px;
+  border-bottom-left-radius: 7px;
+  border-bottom-right-radius: 7px;
+  width: 100%;
+}
+
+.box3 {
+  width: 100%;
+}
+
+.btnStyle1 {
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin-bottom: 40px;
+}
+
+.btnStyle2 {
+  width: 100%;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  padding: 15px 30px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+.round {
+    background-color: #ff6600;
+    border: 1px solid grey;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    position: absolute;
+    top: 0px;
+    left: 49%;
+    text-align: center;
+    padding-top: 10px;
+    font-weight: bold;
+    font-size: 20px;
+    color: #fff;
+}
+
+/***************************************************
+                Helper classes
+***************************************************/
+
+.clearfix::before,
+.clearfix::after {
+  content: " ";
+  display: table;
+}
+
+.clearfix::after {
+  clear: both;
+}
